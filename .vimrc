@@ -23,7 +23,7 @@ nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
-au BufReadPost *.py setlocal sw=4 ts=8 sts=2
+au BufReadPost *.py setlocal sw=4 ts=8 sts=4
 au BufNewFile,BufReadPost *.sl setlocal filetype=forth
 au BufNewFile,BufReadPost *.sl setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,a-z,123-126,128-255
 au BufNewFile,BufReadPost *.sl setlocal sw=4 ts=8
