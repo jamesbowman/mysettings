@@ -24,12 +24,14 @@ set viminfo='10,\"100,:20,%,n~/.viminfo
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
+au BufReadPost *.s setlocal sw=8 ts=8 sts=8
+au BufReadPost *.asm setlocal sw=8 ts=8 sts=8
 au BufNewFile,BufReadPost *.sl setlocal filetype=forth
 au BufNewFile,BufReadPost *.sl setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,a-z,123-126,128-255
 au BufNewFile,BufReadPost *.sl setlocal sw=4 ts=8
 au BufNewFile,BufReadPost *.fs setlocal filetype=forth
 au BufNewFile,BufReadPost *.fs setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,a-z,123-126,128-255
-au BufNewFile,BufReadPost *.fs setlocal sw=4 ts=4
+au BufNewFile,BufReadPost *.fs setlocal sw=4 ts=4 sts=4
 au BufNewFile,BufReadPost *.fs syntax off
 au BufNewFile,BufReadPost *.fs highlight Comment term=standout cterm=bold ctermfg=3
 au! Syntax forth source $HOME/.vim/forth.vim
