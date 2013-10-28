@@ -8,6 +8,9 @@ set notagbsearch
 set expandtab
 set incsearch 
 set notagbsearch
+if filereadable('.local.vim')
+  so .local.vim
+endif
 map q !}fmt
 map!  
 map [24~ :!sh ./go
@@ -37,4 +40,4 @@ au BufNewFile,BufReadPost *.fs highlight Comment term=standout cterm=bold ctermf
 au! Syntax forth source $HOME/.vim/forth.vim
 syntax off
 nnoremap <F9> "=strftime("(                                            JCB %H:%M %m/%d/%y)\n")<CR>P3<Bar>R
-set wildignore=*.o,*.bin*,*jpg,*png,*pdf
+set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
