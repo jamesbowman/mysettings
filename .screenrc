@@ -1,2 +1,5 @@
 hardstatus alwayslastline
 hardstatus string %w
+screen -t bash          0 bash
+screen -t bash          1 bash
+screen -t bash          2 bash
