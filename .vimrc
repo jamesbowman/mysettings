@@ -16,9 +16,9 @@ map!  
 map [24~ :!sh ./go
 map <F1> :bnext
 map <F2> :n#
-map <F9> ]s
-map <F10> zg
-map <F12> :cn
+map <F5> ]s
+map <F6> zg
+map <F7> :cn
 set makeprg=sh\ go
 " map ` :make
 map ` :!sh go
