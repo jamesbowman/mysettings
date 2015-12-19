@@ -1,5 +1,10 @@
+startup_message off
+defscrollback 10000
 hardstatus alwayslastline
 hardstatus string %w
-screen -t bash          0 bash
-screen -t bash          1 bash
-screen -t bash          2 bash
+# screen -t bash          0 bash
+# screen -t bash          1 bash
+# screen -t bash          2 bash
+
+term xterm-256color
+defbce on

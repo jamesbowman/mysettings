@@ -1,0 +1,6 @@
+set -e
+
+git config --global user.name "James Bowman"
+git clone https://github.com/jamesbowman/mysettings
+cd mysettings
+sh ./install

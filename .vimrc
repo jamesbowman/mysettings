@@ -24,10 +24,11 @@ set makeprg=sh\ go
 map ` :!sh go
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
+" set tags=../src/TAGS
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
-au BufReadPost *.s setlocal sw=8 ts=8 sts=8
+au BufReadPost *.[sS] setlocal sw=8 ts=8 sts=8
 au BufReadPost *.asm setlocal sw=8 ts=8 sts=8
 au BufNewFile,BufReadPost *.sl setlocal filetype=forth
 au BufNewFile,BufReadPost *.sl setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,a-z,123-126,128-255
@@ -40,4 +41,7 @@ au BufNewFile,BufReadPost *.fs highlight Comment term=standout cterm=bold ctermf
 au! Syntax forth source $HOME/.vim/forth.vim
 syntax off
 nnoremap <F9> "=strftime("(                                            JCB %H:%M %m/%d/%y)\n")<CR>P3<Bar>R
+map <F8> :r !xclip -o
 set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
+set t_Co=256
+" local

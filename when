@@ -1,0 +1,15 @@
+#!/bin/bash
+
+LATER=`date -d $1 +%s`
+NOW=`date +%s `
+
+D=$((LATER - NOW))
+
+if [ $D -lt 0 ]
+then
+    D=$((D + (24 * 3600)))
+fi
+
+echo sleep $D
+
+sleep $D
