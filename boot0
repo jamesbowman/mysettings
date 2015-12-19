@@ -1,0 +1,5 @@
+adduser --disabled-password --gecos "" jamesb
+cp -r .ssh ~jamesb/
+chown -R jamesb ~jamesb/.ssh/
+apt-get update
+apt-get install git
