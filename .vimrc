@@ -11,6 +11,10 @@ set notagbsearch
 if filereadable('.local.vim')
   so .local.vim
 endif
+let &colorcolumn="64,80"
+highlight ColorColumn ctermbg=233 guibg=#2c2d27
+" set cursorline
+" hi CursorLine   cterm=NONE ctermbg=235 guibg=darkblue guifg=white
 map q !}fmt
 map!  
 map [24~ :!sh ./go
@@ -38,6 +42,11 @@ au BufNewFile,BufReadPost *.fs setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,
 au BufNewFile,BufReadPost *.fs setlocal sw=4 ts=4 sts=4
 au BufNewFile,BufReadPost *.fs syntax off
 au BufNewFile,BufReadPost *.fs highlight Comment term=standout cterm=bold ctermfg=3
+au BufNewFile,BufReadPost *.frt setlocal filetype=forth
+au BufNewFile,BufReadPost *.frt setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96,a-z,123-126,128-255
+au BufNewFile,BufReadPost *.frt setlocal sw=4 ts=4 sts=4
+au BufNewFile,BufReadPost *.frt syntax off
+au BufNewFile,BufReadPost *.frt highlight Comment term=standout cterm=bold ctermfg=3
 au! Syntax forth source $HOME/.vim/forth.vim
 syntax off
 nnoremap <F9> "=strftime("(                                            JCB %H:%M %m/%d/%y)\n")<CR>P3<Bar>R

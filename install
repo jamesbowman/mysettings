@@ -2,3 +2,5 @@ for x in .vimrc .screenrc .bash_aliases
 do
   ln -s $PWD/$x $HOME
 done
+mkdir -p $HOME/.i3
+cp config $HOME/.i3/
