@@ -4,3 +4,4 @@ do
 done
 mkdir -p $HOME/.i3
 cp config $HOME/.i3/
+
