@@ -11,7 +11,7 @@ set notagbsearch
 if filereadable('.local.vim')
   so .local.vim
 endif
-let &colorcolumn="64,80"
+" let &colorcolumn="64,80"
 highlight ColorColumn ctermbg=233 guibg=#2c2d27
 " set cursorline
 " hi CursorLine   cterm=NONE ctermbg=235 guibg=darkblue guifg=white
