@@ -12,12 +12,11 @@ if filereadable('.local.vim')
   so .local.vim
 endif
 " let &colorcolumn="64,80"
-highlight ColorColumn ctermbg=233 guibg=#2c2d27
+" highlight ColorColumn ctermbg=233 guibg=#2c2d27
 " set cursorline
 " hi CursorLine   cterm=NONE ctermbg=235 guibg=darkblue guifg=white
 map q !}fmt
 map!  
-map [24~ :!sh ./go
 map <F1> :bnext
 map <F2> :n#
 map <F5> ]s
@@ -25,7 +24,7 @@ map <F6> zg
 map <F7> :cn
 set makeprg=sh\ go
 " map ` :make
-map ` :!sh go
+map ` :!bash go
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
 " set tags=../src/TAGS
