@@ -1,6 +1,9 @@
 set -e
 
+git config --global user.email jamesb@excamera.com
 git config --global user.name "James Bowman"
+git config --global push.default matching
+
 git clone https://github.com/jamesbowman/mysettings
 cd mysettings
 sh ./install

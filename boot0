@@ -4,4 +4,4 @@ adduser --disabled-password --gecos "" jamesb
 cp -r .ssh ~jamesb/
 chown -R jamesb ~jamesb/.ssh/
 apt-get update
-apt-get install git
+apt-get install git python-imaging python-numpy gforth make g++ python-dev tig ccache flex bison
