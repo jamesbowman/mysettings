@@ -1,3 +1,4 @@
+export EDITOR=vi
 alias gp='git pull;git push'
 alias g='bash go'
 alias ll='ls -l'
