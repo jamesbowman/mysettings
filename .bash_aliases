@@ -10,5 +10,6 @@ proj() {
   cd
   git clone git@github.com:jamesbowman/$1.git
   cd $1 
+  . ./env
   ./fromcold
 }
