@@ -7,5 +7,5 @@ apt-get update
 apt-get install -y git screen tig htop
 
 D=volume-sfo2-01
-echo '/dev/disk/by-id/scsi-0DO_Volume_${D}-part1 /mnt/${D}-part1 ext4 defaults,nofail,discard 0 2' | tee -a /etc/fstab
+echo "/dev/disk/by-id/scsi-0DO_Volume_${D}-part1 /mnt/${D}-part1 ext4 defaults,nofail,discard 0 2" | tee -a /etc/fstab
 mount -a
