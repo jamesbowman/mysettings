@@ -6,6 +6,7 @@ chown -R jamesb ~jamesb/.ssh/
 apt-get update
 apt-get install -y git screen tig htop
 
-D=volume-sfo2-01
-echo "/dev/disk/by-id/scsi-0DO_Volume_${D}-part1 /mnt/${D}-part1 ext4 defaults,nofail,discard 0 2" | tee -a /etc/fstab
+D=volume-sfo2-01-part1
+mkdir /mnt/${D}
+echo "/dev/disk/by-id/scsi-0DO_Volume_${D} /mnt/${D} ext4 defaults,nofail,discard 0 2" | tee -a /etc/fstab
 mount -a
