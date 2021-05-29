@@ -4,6 +4,7 @@ set sts=2
 set aw
 set ai
 set sm
+set modeline
 set notagbsearch
 set expandtab
 set incsearch 
@@ -46,10 +47,15 @@ au BufNewFile,BufReadPost *.frt setlocal iskeyword=!,@,33-35,%,$,38-64,A-Z,91-96
 au BufNewFile,BufReadPost *.frt setlocal sw=4 ts=4 sts=4
 au BufNewFile,BufReadPost *.frt syntax off
 au BufNewFile,BufReadPost *.frt highlight Comment term=standout cterm=bold ctermfg=3
+" au BufNewFile,BufReadPost ren_*.py map ` :w
 au! Syntax forth source $HOME/.vim/forth.vim
 syntax off
 nnoremap <F9> "=strftime("(                                            JCB %H:%M %m/%d/%y)\n")<CR>P3<Bar>R
 map <F8> :r !xclip -o
+map <F9> !}xclip -i -f -selection c}j
 set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
 set t_Co=256
+:highlight PmenuSel ctermfg=15  ctermbg=136
+:highlight Pmenu    ctermfg=239 ctermbg=235
+
 " local
