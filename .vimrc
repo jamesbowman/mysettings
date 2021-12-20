@@ -28,7 +28,7 @@ set makeprg=sh\ go
 map ` :!bash go
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
-" set tags=../src/TAGS
+set tags=./tags,src/tags
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
@@ -53,6 +53,7 @@ syntax off
 nnoremap <F9> "=strftime("(                                            JCB %H:%M %m/%d/%y)\n")<CR>P3<Bar>R
 map <F8> :r !xclip -o
 map <F9> !}xclip -i -f -selection c}j
+map <F10> yiwoprint(f"{"=}")
 set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
 set t_Co=256
 :highlight PmenuSel ctermfg=15  ctermbg=136
