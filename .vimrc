@@ -56,6 +56,7 @@ map <F9> !}xclip -i -f -selection c}j
 map <F10> yiwoprint(f"{"=}")
 set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
 set t_Co=256
+colorscheme desert
 :highlight PmenuSel ctermfg=15  ctermbg=136
 :highlight Pmenu    ctermfg=239 ctermbg=235
 set nrformats-=octal
