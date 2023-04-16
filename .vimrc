@@ -20,15 +20,18 @@ map q !}fmt
 map!  
 map <F1> :bnext
 map <F2> :n#
-map <F5> ]s
+map <F3> :let @z = @/?^classwyw:!python src/tests/systemtests.py -l3 -v ""$":let @/ = @a
 map <F6> zg
 map <F7> :cn
 set makeprg=sh\ go
 " map ` :make
 map ` :!bash go
+map <Tab> :!bash go
+map <PageUp> 
+map <PageDown> 
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
-set tags=./tags,src/tags
+set tags=./tags,src/tags,py-tags
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
@@ -54,7 +57,7 @@ nnoremap <F9> "=strftime("(                                            JCB %H:%M
 map <F8> :r !xclip -o
 map <F9> !}xclip -i -f -selection c}j
 map <F10> yiwoprint(f"{"=}")
-set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a
+set wildignore=*.o,*.bin*,*.jpg,*.png,*.pdf,*.exe,*.a,*.mpy
 set t_Co=256
 colorscheme desert
 :highlight PmenuSel ctermfg=15  ctermbg=136

@@ -7,3 +7,4 @@
 
 : **2 1 swap lshift ;
 : l2 ( x -- y) 0 begin 1+ 2dup **2 < until nip ;
+quit
