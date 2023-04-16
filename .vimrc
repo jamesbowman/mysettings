@@ -27,8 +27,6 @@ set makeprg=sh\ go
 " map ` :make
 map ` :!bash go
 map <Tab> :!bash go
-map <PageUp> 
-map <PageDown> 
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
 set tags=./tags,src/tags,py-tags
