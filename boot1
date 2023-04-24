@@ -8,4 +8,4 @@ git clone https://github.com/jamesbowman/mysettings
 echo "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 cd mysettings
 sh ./install
-ln -s /mnt/volume-sfo2-01-part1/ $HOME/w
+# ln -s /mnt/volume-sfo2-01-part1/ $HOME/w

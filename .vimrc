@@ -37,7 +37,7 @@ set nostartofline
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
 set tags=./tags,src/tags,py-tags
-let loaded_matchparen = 1
+" let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
 au BufReadPost *.[sS] setlocal sw=8 ts=8 sts=8
@@ -67,6 +67,10 @@ set t_Co=256
 colorscheme desert
 :highlight PmenuSel ctermfg=15  ctermbg=136
 :highlight Pmenu    ctermfg=239 ctermbg=235
+
 set nrformats-=octal
+colorscheme industry
+hi MatchParen ctermbg=17 ctermfg=white
+set showmatch matchtime=0
 
 " local
