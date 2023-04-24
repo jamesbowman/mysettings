@@ -29,7 +29,7 @@ map ` :!bash go
 map <Tab> :!bash go
 nnoremap <silent> <F8> :TlistToggle<CR>
 set viminfo='10,\"100,:20,%,n~/.viminfo
-set tags=./tags,src/tags,py-tags
+set tags=./tags,src/tags,src/tags2,py-tags
 let loaded_matchparen = 1
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 au BufReadPost *.py setlocal sw=4 ts=8 sts=4
