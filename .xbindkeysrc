@@ -1,0 +1,6 @@
+"playerctl play-pause"
+    Mod2 + F1 + Release
+"macwave"
+    Mod2 + F5 + Release
+"xdotool click 2"
+    Delete
