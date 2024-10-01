@@ -14,3 +14,10 @@ proj() {
   . ./env
   ./fromcold
 }
+lh() {
+  set +o history
+  cd $1
+  export HISTFILE="$PWD/.bash_history"
+  set -o history
+  history -r
+}

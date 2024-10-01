@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/jamesb/solar'
+let g:netrw_dirhist_9='/home/jamesb/ft81x/build/fexports'
+let g:netrw_dirhist_8='/home/jamesb/ft81x/project'
+let g:netrw_dirhist_7='/media/jamesb/e2c80031-d800-4c44-8cc5-346f05b0e59c/boot'
+let g:netrw_dirhist_6='/home/jamesb/py-bteve/bteve'
+let g:netrw_dirhist_5='/home/jamesb/py-bteve2-dev/bteve2'
+let g:netrw_dirhist_4='/home/jamesb/py-bteve/assets'
+let g:netrw_dirhist_3='/home/jamesb/CircuitPython_bteve/bteve'
+let g:netrw_dirhist_2='/home/jamesb/amiga-fw/display_proto'
+let g:netrw_dirhist_1='/home/jamesb/deltav/python'

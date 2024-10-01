@@ -1,10 +1,15 @@
 startup_message off
 defscrollback 10000
 hardstatus alwayslastline
-hardstatus string %w
-# screen -t bash          0 bash
-# screen -t bash          1 bash
-# screen -t bash          2 bash
+hardstatus string '%{= by}%w'
+screen -t ft82x         0 bash
+screen -t py-bteve2-dev 1 bash
+screen -t amiga-fw      2 bash
+screen -t cuflow        3 bash
+screen -t solar         4 bash
+screen -t astrovision   5 bash
+screen -t INEAC         6 bash
+screen -t bash          7 bash
 
 term xterm-256color
 defbce on

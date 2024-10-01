@@ -16,6 +16,7 @@ endif
 " highlight ColorColumn ctermbg=233 guibg=#2c2d27
 " set cursorline
 " hi CursorLine   cterm=NONE ctermbg=235 guibg=darkblue guifg=white
+map gd oprint(f""={"}")
 map q !}fmt
 map!  
 map <F1> :bnext
@@ -27,6 +28,8 @@ set makeprg=sh\ go
 " map ` :make
 map ` :!bash go
 map <Tab> :!bash go
+map \ :up:MRU
+map <C-\> :n#
 
 map <PageUp> m'<C-U>
 map <PageDown> m'<C-D>

@@ -1,4 +1,4 @@
-for x in .vimrc .screenrc .bash_aliases
+for x in .vim .vimrc .screenrc .bash_aliases
 do
   ln -s $PWD/$x $HOME
 done
