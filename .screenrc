@@ -4,7 +4,7 @@ hardstatus alwayslastline
 hardstatus string '%{= by}%w'
 screen -t ft82x         0 bash
 screen -t py-bteve2-dev 1 bash
-screen -t amiga-fw      2 bash
+screen -t excamera      2 bash
 screen -t cuflow        3 bash
 screen -t solar         4 bash
 screen -t astrovision   5 bash
